@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  nullscan:
+    build: .
+    container_name: nullscan
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+    # Usage:
+    # docker compose up --build
